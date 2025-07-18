@@ -1,0 +1,42 @@
+/* Reset and base styles */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background: transparent;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .MuiCard-root {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .MuiTypography-h3 {
+    font-size: 2rem !important;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.2rem !important;
+  }
+  .MuiCardContent-root {
+    padding: 16px !important;
+  }
+}
+
+/* Remove default App styles */
+.App, .App-logo, .App-header, .App-link {
+  all: unset;
+}
